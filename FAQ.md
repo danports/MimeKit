@@ -470,7 +470,7 @@ class HtmlPreviewVisitor : MimeVisitor
 
         // treat text/calendar parts as attachments rather than message bodies
         if (entity.ContentType.IsMimeType ("text", "calendar")) {
-            calendarAattachments.Add (entity);
+            calendarAttachments.Add (entity);
             return;
         }
 
